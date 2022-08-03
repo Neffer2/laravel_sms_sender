@@ -5,7 +5,7 @@ class NotificationController extends Controller
 {
     public function sendSmsNotificaition()
     {
-        $basic  = new \Nexmo\Client\Credentials\Basic('3bde3e84', 'h2EKYIsk74vKzCPp');
+        $basic  = new \Nexmo\Client\Credentials\Basic('', '');
         $client = new \Nexmo\Client($basic);
  
         $message = $client->message()->send([
